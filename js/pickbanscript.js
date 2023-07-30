@@ -83,10 +83,10 @@ let margin = {top: 20, right: 200, bottom: 100, left: 50},
         .attr("width", xScale.bandwidth() / 2)
         .attr("height", d => height - yScale(d.banned_games))
         .attr("fill", "red")
-        .attr("id", (d, i) => "ban-bar-" + i); // Assign id to rectangles
+        .attr("id", (d, i) => "ban-bar-" + i); 
     
-    // Append title elements for tooltips
-    banBars.append("title") // Add a title element for the tooltip
+    
+    banBars.append("title") 
         .text(d => "Champion: " + d.champion + "\n" + "Picked: " + d.played_games + "%" + "\n" + "Banned: " + d.banned_games + "%"); // The tooltip text
     
     let playBars = svg.selectAll(".play-bar")
@@ -98,13 +98,13 @@ let margin = {top: 20, right: 200, bottom: 100, left: 50},
         .attr("width", xScale.bandwidth() / 2)
         .attr("height", d => height - yScale(d.played_games))
         .attr("fill", "blue")
-        .attr("id", (d, i) => "play-bar-" + i); // Assign id to rectangles
+        .attr("id", (d, i) => "play-bar-" + i);
     
-    // Append title elements for tooltips
+   
     playBars.append("title") 
         .text(d => "Champion: " + d.champion + "\n" + "Picked: " + d.played_games + "%" + "\n" + "Banned: " + d.banned_games + "%"); // The tooltip text
 
-    // Add bars for played games
+   
     svg.selectAll(".play-bar")
         .data(filteredData)
         .enter().append("rect")
@@ -133,7 +133,6 @@ let margin = {top: 20, right: 200, bottom: 100, left: 50},
         let dynamicText = yearTexts[selectedYear + 2010][1];
         let dynamicText2 = yearTexts[selectedYear + 2010][2];
 
-        // Created a foreignObject to hold the text block
         let createAnnotation = (svg, text, championBarSelector, textPosition, lineEndPosition) => {
             let foreignObject = svg.append('foreignObject')
                 .attr('x', textPosition.x)

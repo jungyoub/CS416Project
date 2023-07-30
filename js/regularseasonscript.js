@@ -16,13 +16,13 @@ var teamAnnotations = {
 
 var svg1 = d3.select("#radar-chart-1 .chart").append("svg")
   .attr("width", 600)  
-  .attr("height", 600 - 50)  // reserve space for the title
+  .attr("height", 600 - 50)  
   .append("g")
   .attr("transform", "translate(" + 600 / 2 + "," + (600 - 50) / 2 + ")"); 
 
 var svg2 = d3.select("#radar-chart-2 .chart").append("svg")
   .attr("width", 600)  
-  .attr("height", 600 - 50)  // reserve space for the title
+  .attr("height", 600 - 50)  
   .append("g")
   .attr("transform", "translate(" + 600 / 2 + "," + (600 - 50) / 2 + ")"); 
 

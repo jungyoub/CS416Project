@@ -38,3 +38,8 @@ body {
   font-size: 20px;
   color: black;
 }
+
+#description {
+  text-align: center;
+  font-size: 0.8em; 
+}
