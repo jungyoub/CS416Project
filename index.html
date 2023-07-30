@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>League of Legends World Championship Timeline</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide active" id="title">
+            <h1>League of Legends World Championship: DRX's Miracle Run</h1>
+            <p>By: Sam Lee</p>
+        </div>
+        <div class="slide">
+            <iframe src="leagueguide.html"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="timeline.html"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="pickbans.html"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="regularseason.html"></iframe>
+        </div>
+        <div class="slide">
+            <iframe src="worlds.html"></iframe>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</body>
+<script>
+    var slideIndex = 0;
+    showSlides(slideIndex);
+  
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+  
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) {slideIndex = 0}
+        if (n < 0) {slideIndex = slides.length - 1}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex].style.display = "block";
+    }
+  </script>
+</html>

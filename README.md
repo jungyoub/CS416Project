@@ -1,1 +1,1 @@
-# CS498Project
+# data_visualization_project

@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: skyblue;
+}
+
+#charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 20px;
+}
+
+#charts text {
+  fill: black;
+}
+
+#charts path {
+  stroke: white;
+  stroke-width: 2;
+}
+
+#team-select {
+  margin-top: 20px;
+}
+
+#charts h2 {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}

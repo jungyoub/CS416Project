@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: skyblue;
+}
+
+#radar-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 60%;
+  width: 85%
+}
+
+#radar-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#radar-chart-1, #radar-chart-2 {
+  min-height: 650px;  
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#radar-chart-1 .chart, #radar-chart-2 .chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin-top: -90px; 
+}
+
+#radar-chart .axis line,
+#radar-chart .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#radar-chart .axis text {
+  font: 10px sans-serif;
+}
+
+#radar-chart .axis .legend {
+  font-size: 20px;
+}
+
+#radar-chart .polygon {
+  fill-opacity: 0.5;
+  stroke-width: 2;
+}
+
+#team-select {
+  margin-top: 20px;
+}
+
+.color-preview {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+#spring-color-preview {
+  background-color: #006400;  
+}
+
+#summer-color-preview {
+  background-color: #FF8C00;  
+}
+
+#text-container {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  max-width: 60%;
+  margin: 0 auto;
+}

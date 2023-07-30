@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/radar.css">
+</head>
+<body>
+  <h1>DRX - A Middling Regular Season</h1>
+  <h4>An Analysis of Objective Control between the LCK's Top Seeds</h4>
+  <div id="radar-container">
+    <div id="radar-wrapper">
+      <div id="radar-chart-1">
+        <h2 id="radar-chart-1-title">DRX</h2>
+        <div class="chart"></div>  
+      </div>
+      <div id="radar-chart-2">
+        <h2 id="radar-chart-2-title"></h2>
+        <div class="chart"></div>  
+      </div>
+      <div id="chart-labels"></div>
+    </div>
+  </div>
+  <select id="team-select"></select>
+  <label><input type="checkbox" id="spring-checkbox" checked> Spring <span class="color-preview" style="background-color: #006400;"></span></label>
+  <label><input type="checkbox" id="summer-checkbox" checked> Summer <span class="color-preview" style="background-color: #FF8C00;"></span></label>
+  <p>
+    <ul>
+      <li><strong>FT%</strong>: The First Tower rate represents the percentage of games where the team took the first tower.</li>
+      <li><strong>HLD%</strong>: The Herald rate indicates the percentage of games where the team secured the Rift Herald, an objective that allows teams to more easily get First Turret</li>
+      <li><strong>DRG%</strong>: The Dragon control rate represents the percentage of total dragons killed by the team. Dragons provide team stat increases.</li>
+      <li><strong>FBN%</strong>: The First Baron rate indicates the percentage of games where the team secured the first Baron. Baron provides a team and minion buff.</li>
+      <li><strong>FB%</strong>: The First Blood rate shows the percentage of games where the team secured the first kill.</li>
+    </ul>
+  </p>
+  
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="js/regularseasonscript.js"></script>
+</body>
+</html>
